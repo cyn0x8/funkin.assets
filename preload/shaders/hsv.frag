@@ -4,15 +4,6 @@ uniform float _hue;
 uniform float _sat;
 uniform float _val;
 
-vec3 normalizeColor(vec3 color)
-{
-    return vec3(
-        color[0] / 255.0,
-        color[1] / 255.0,
-        color[2] / 255.0
-    );
-}
-
 vec3 rgb2hsv(vec3 c)
 {
     vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
